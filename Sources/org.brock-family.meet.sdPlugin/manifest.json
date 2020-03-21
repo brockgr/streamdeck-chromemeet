@@ -1,0 +1,77 @@
+{
+  "Actions": [
+    {
+      "Icon": "icons/MeetIcon", 
+      "States": [
+        { "Image": "icons/MeetIcon" }
+      ], 
+      "Name": "Focus Meet", 
+      "Tooltip": "Switch to the Meet tab in Chrome", 
+      "UUID": "org.brock-family.meet.focus.action"
+    },
+    {
+      "Icon": "icons/Hangup", 
+      "States": [
+        { "Image": "icons/Hangup" }
+      ], 
+      "Name": "Hangup Meet", 
+      "Tooltip": "Hangup Meet tab in Chrome", 
+      "UUID": "org.brock-family.meet.hangup.action"
+    },
+    {
+      "Icon": "icons/PTTUnmute", 
+      "Name": "Push To Talk", 
+      "States": [
+        { "Image": "icons/PTTMute" },
+        { "Image": "icons/PTTUnmute" }
+      ], 
+      "Tooltip": "Unumute while button pressed", 
+      "UUID": "org.brock-family.meet.ptt.action"
+    },
+    {
+      "Icon": "icons/VoiceUnmute", 
+      "Name": "Toggle Voice", 
+      "States": [
+        { "Image": "icons/VoiceMute" },
+        { "Image": "icons/VoiceUnmute" }
+      ], 
+      "Tooltip": "Voice toggle button", 
+      "UUID": "org.brock-family.meet.voice.action"
+    },
+    {
+      "Icon": "icons/VoiceUnmute", 
+      "Name": "Toggle Video", 
+      "States": [
+        { "Image": "icons/VideoMute" },
+        { "Image": "icons/VideoUnmute" }
+      ], 
+      "Tooltip": "Video toggle button", 
+      "UUID": "org.brock-family.meet.video.action"
+    }
+  ], 
+  "Category": "Google Meet on Chrome",
+  "CategoryIcon": "icons/MeetIcon",
+  "SDKVersion": 2,
+  "Author": "Gavin Brock (Copied form Elgato AppleMail)", 
+  "CodePath": "ChromeMeet", 
+  "Description": "Control Google Meet on Chrome.", 
+  "Name": "Google Meet", 
+  "Icon": "icons/MeetIcon", 
+  "URL": "https://www.elgato.com/gaming/stream-deck", 
+  "Version": "1.0",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    }
+  ],
+  "ApplicationsToMonitor": {
+  	"mac": [
+		"com.google.Chrome"
+	]
+  },
+  "Software": 
+    {
+        "MinimumVersion" : "4.1"
+    }
+}
