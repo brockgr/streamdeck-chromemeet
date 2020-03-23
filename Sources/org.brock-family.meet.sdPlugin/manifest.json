@@ -58,7 +58,7 @@
   "Name": "Google Meet", 
   "Icon": "icons/MeetIcon", 
   "URL": "https://www.elgato.com/gaming/stream-deck", 
-  "Version": "1.0",
+  "Version": "1.01",
   "OS": [
     {
         "Platform": "mac", 
