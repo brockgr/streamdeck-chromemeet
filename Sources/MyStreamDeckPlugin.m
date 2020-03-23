@@ -165,6 +165,7 @@ static Boolean runAppleSrcipt(NSString * script)
     }
     else if([action isEqualToString:@"org.brock-family.meet.ptt.action"]) {
         runAppleSrcipt(@"applescripts/VoiceUnmute.scpt");
+        [self.connectionManager setState:@1 forContext:context];
     }
     else if ([action isEqualToString:@"org.brock-family.meet.voice.action"]) {
         runAppleSrcipt(@"applescripts/VoiceToggle.scpt");
@@ -180,6 +181,7 @@ static Boolean runAppleSrcipt(NSString * script)
 {
     if([action isEqualToString:@"org.brock-family.meet.ptt.action"]) {
         runAppleSrcipt(@"applescripts/VoiceMute.scpt");
+        [self.connectionManager setState:@0 forContext:context];
     }
     [self refreshMuteStates];
 }
